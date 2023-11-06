@@ -1,0 +1,82 @@
+// --------------------------------------------------
+// SETTING FOR GLOBAL STYLE
+// --------------------------------------------------
+
+/**
+  * Breakpoints
+  * 
+  */
+  $breakpoint-320:                      '320px';
+  $breakpoint-375:                      '375px';
+  $breakpoint-411:                      '411px';
+  $breakpoint-md:                       '768px';
+  $breakpoint-lg:                       '992px'; 
+  $breakpoint-xl:                       '1400px';
+  $breakpoint-xxl:                      '1600px';
+
+  /**
+    * Colors
+    * 
+    */
+  $primary-color:                        #FF6060;
+  $secondary-color:                      #FFF;
+  $tertiary-color:                       #000;
+
+  /**
+    * Typography
+    * 
+    */
+  $font-family-txt:                       'Montserrat', sans-serif;
+  
+  $font-size-init:                        16px;
+  $font-size-normal:                      1em;
+  
+  $line-height-normal:                    1;
+
+  /**
+    * .body
+    * 
+    */
+  $font-size-body:                        $font-size-init;
+  $font-style-body:                       normal;
+  $font-weight-body:                      400;
+  $line-height-body:                      19px;
+  $color-body:                            $secondary-color;
+  $bg-color-body:                         $secondary-color;
+
+  /**
+    * Other bases
+    * 
+    */
+  
+  //== Levels of section headings ==
+  $color-h1-h2-h3:                        $secondary-color;
+
+  //== h1 ==
+  $font-size-h1-page:                     $font-size-normal * 1.25;
+  $font-size-h1-page-375:                 $font-size-normal * 1.45;
+  $font-size-h1-page-411:                 $font-size-normal * 1.75;
+  $font-size-h1-page-md:                  $font-size-normal * 1.65;
+  $font-size-h1-page-xl:                  $font-size-normal * 1.85;
+  $font-size-h1-page-xxl:                 $font-size-normal * 2.05;
+
+  $line-height-h1-page:                   $line-height-normal * 1.2;
+  
+  $font-weight-h1-h2-h3:                  500;
+
+  //== p ==
+  $font-size-p-banner:                    $font-size-normal;
+  $font-size-p-banner-375:                $font-size-normal * 1.1;
+  $font-size-p-banner-411:                $font-size-normal * 1.2;
+  
+  $line-height-p-banner:                  $line-height-normal * 1.15;  
+  
+  //== a ==
+  $font-size-a-nav:                       $font-size-normal * .775;
+  $font-size-a-nav-375:                   $font-size-normal * .875;
+  $font-size-a-nav-md:                    $font-size-normal * .875;
+  $font-size-a-nav-lg:                    $font-size-normal * 1.15;
+  $font-size-a-nav-xl:                    $font-size-normal * 1.25;
+  $line-height-a-nav:                     $line-height-normal * 2;
+  $font-weight-a:                         500;
+  $color-a:                               $primary-color;

@@ -2,12 +2,27 @@
    SETTING FOR BASIC STYLE
    -------------------------------------------------- */
 
-   * {
-    margin: 0;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.body {
+  width: 100%;
+  font-family: $font-family-txt;
+  font-size: $font-size-body;
+  line-height: $line-height-body;
+  font-weight: $font-weight-body;
+  font-style: $font-style-body;
+  background-color: $bg-color-body;
+  color: $color-body;
+}
+
+#root {
+  width: 100%;
+}
