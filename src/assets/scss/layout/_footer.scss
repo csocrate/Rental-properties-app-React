@@ -1,0 +1,23 @@
+.footer-site {
+  width: 100%;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 12rem;
+    background-color: $bg-color-footer;
+
+    small {
+      width: 8rem;
+      text-align: center;
+      padding-top: .875rem;
+    
+      @media (min-width: $breakpoint-lg ) {
+        width: unset;
+      }
+    }
+  }
+}

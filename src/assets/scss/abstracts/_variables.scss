@@ -80,3 +80,19 @@
   $line-height-a-nav:                     $line-height-normal * 2;
   $font-weight-a:                         500;
   $color-a:                               $primary-color;
+
+// --------------------------------------------------
+// COMPONENTS
+// --------------------------------------------------
+
+/**
+  * Layout
+  * 
+  */
+
+ //== Header ==
+$bg-color-header:                         $secondary-color;
+
+//== Footer ==
+$bg-color-footer:                         $tertiary-color;
+
