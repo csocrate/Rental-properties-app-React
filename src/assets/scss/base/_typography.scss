@@ -32,3 +32,49 @@
     }
   }
 }
+
+.not-found{
+  > * {
+    color:  $not-found-error-color
+  }
+
+  h1 {
+    font-size: $font-size-h1-404;
+    line-height: $line-height-h1-404;
+
+    @media (min-width: $breakpoint-md ) {
+      font-size: $font-size-h1-404-md;
+    }
+
+    @media (min-width: $breakpoint-lg ) {
+      font-size: $font-size-h1-404-lg;
+    }
+
+    @media (min-width: $breakpoint-xl ) {
+      font-size: $font-size-h1-404-xl;
+    }
+
+    @media (min-width: $breakpoint-xxl ) {
+      font-size: $font-size-h1-404-xxl;
+    }
+  }
+
+  p {
+    font-size: $font-size-p-404;
+    line-height: $line-height-p-404;
+
+    @media (min-width: $breakpoint-md ) {
+      font-size: $font-size-p-404-md;
+    }
+  }
+
+  a {
+    font-size: $font-size-a-404;
+    font-weight: $font-weight-a-404;
+    text-decoration: underline;
+
+    @media (min-width: $breakpoint-md ) {
+      font-size: $font-size-a-404-md;
+    }
+  }
+}

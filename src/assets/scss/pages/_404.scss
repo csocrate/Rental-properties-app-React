@@ -1,0 +1,48 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $breakpoint-md ) {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: $breakpoint-md ) {
+      margin-bottom: 4rem;
+    }
+
+    @media (min-width: $breakpoint-lg ) {
+      flex-direction: row;
+    }
+
+    span {
+      &:last-child {
+
+        @media (min-width: $breakpoint-lg ) {
+          margin-left: .5rem;
+        }
+      }
+    }
+  
+  }
+
+  h1 {
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  a {
+    padding-bottom: 2rem;
+    cursor: pointer;
+  }
+}

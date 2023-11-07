@@ -96,3 +96,21 @@ $bg-color-header:                         $secondary-color;
 //== Footer ==
 $bg-color-footer:                         $tertiary-color;
 
+// --------------------------------------------------
+// PAGES
+// --------------------------------------------------
+
+ //== 404 error ==
+$font-size-h1-404:                        $font-size-normal * 6;
+$font-size-h1-404-md:                     $font-size-normal * 8;
+$font-size-h1-404-lg:                     $font-size-normal * 12;
+$font-size-h1-404-xl:                     $font-size-normal * 14;
+$font-size-h1-404-xxl:                    $font-size-normal * 18;
+$font-size-p-404:                         $font-size-normal * 1.1;
+$font-size-p-404-md:                      $font-size-normal * 1.35;
+$font-size-a-404:                         $font-size-normal * 1.1;
+$font-size-a-404-md:                      $font-size-normal * 1.125;
+$line-height-h1-404:                      $line-height-normal;
+$line-height-p-404:                       $line-height-normal * 1.35;
+$font-weight-a-404:                       500;
+$not-found-error-color:                   $primary-color;

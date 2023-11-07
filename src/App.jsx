@@ -1,5 +1,6 @@
 import Home from './pages/Home';
 import About from './pages/About';
+import NotFound from './pages/404';
 import Root from './routes';
 import {
   createBrowserRouter,
@@ -10,15 +11,16 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
+    errorElement: <NotFound />,
     children: [
       {
         path: '',
         element: <Home />
       },
       {
-        path: 'about',
+        path: 'a-propos',
         element: <About />
-      }      
+      }  
     ]
   }
 ]);
