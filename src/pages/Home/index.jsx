@@ -1,7 +1,10 @@
+import Banner from '../../components/Banner';
+
 function Home() {
   return (
     <>
-      <h1>Kasa app</h1>
+      <Banner 
+        title = 'Chez vous, partout et ailleurs' />
     </>
   );
 }

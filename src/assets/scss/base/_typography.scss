@@ -78,3 +78,35 @@
     }
   }
 }
+
+.banner {
+  h1 {
+    font-size: $font-size-h1-banner;
+    line-height: $line-height-h1-banner;
+    font-weight: $font-weight-h1-h2-h3;
+
+    @media (min-width: $breakpoint-375 ) {
+      font-size: $font-size-h1-banner-375;
+    }
+
+    @media (min-width: $breakpoint-411 ) {
+      font-size: $font-size-h1-banner-411;
+    }
+
+    @media (min-width: $breakpoint-md ) {
+      font-size: $font-size-h1-banner-md;
+    }
+
+    @media (min-width: $breakpoint-lg ) {
+      font-size: $font-size-h1-banner-lg;
+    }
+
+    @media (min-width: $breakpoint-xl ) {
+      font-size: $font-size-h1-banner-xl;
+    }
+
+    @media (min-width: $breakpoint-xxl ) {
+      font-size: $font-size-h1-banner-xxl;
+    }
+  }
+}

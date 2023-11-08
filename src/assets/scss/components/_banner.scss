@@ -1,0 +1,70 @@
+
+.banner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  padding: 1rem;
+
+  @media (min-width: $breakpoint-375) {
+    height: 17vh;
+  }
+
+  @media (min-width: $breakpoint-411) {
+    height: 18vh;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    height: 21vh;
+    padding: 2rem;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    justify-content: center;
+    height: 22vh;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    height: 23vh;
+  }
+
+  @media (min-width: $breakpoint-xxl) {
+    height: 28vh;
+  }
+
+  h1 {
+    margin-right: 4rem;
+
+    @media (min-width: $breakpoint-375) {
+      margin-right: 6rem;
+    }
+
+    @media (min-width: $breakpoint-411) {
+      margin-right: 8rem;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      margin-right: 24rem;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      margin-right: 0;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-image: url("../../assets/images/home_banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+    filter: brightness(.65);
+  }
+}

@@ -82,19 +82,28 @@
   $color-a:                               $primary-color;
 
 // --------------------------------------------------
-// COMPONENTS
+// LAYOUT
 // --------------------------------------------------
 
-/**
-  * Layout
-  * 
-  */
-
- //== Header ==
+//== Header ==
 $bg-color-header:                         $secondary-color;
 
 //== Footer ==
 $bg-color-footer:                         $tertiary-color;
+
+// --------------------------------------------------
+// COMPONENTS
+// --------------------------------------------------
+
+//== Banner ==
+$font-size-h1-banner:                     $font-size-normal * 1.3;
+$font-size-h1-banner-375:                 $font-size-normal * 1.4;
+$font-size-h1-banner-411:                 $font-size-normal * 1.5;
+$font-size-h1-banner-md:                  $font-size-normal * 1.65;
+$font-size-h1-banner-lg:                  $font-size-normal * 1.75;
+$font-size-h1-banner-xl:                  $font-size-normal * 2.25;
+$font-size-h1-banner-xxl:                  $font-size-normal * 2.5;
+$line-height-h1-banner:                   $line-height-normal * 1.25;
 
 // --------------------------------------------------
 // PAGES
