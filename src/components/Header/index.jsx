@@ -10,8 +10,18 @@ function Header() {
             <img src={logo} alt="Kasa" width="100" height="auto"/>
           </a>
           <nav>
-            <NavLink to="/">Accueil</NavLink>
-            <NavLink to="/a-propos">A propos</NavLink>
+            <ul>
+              <li>
+                <NavLink to="/">
+                  Accueil
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/a-propos">
+                  A propos
+                </NavLink>
+              </li>
+            </ul>
           </nav>
         </div>
       </header>
