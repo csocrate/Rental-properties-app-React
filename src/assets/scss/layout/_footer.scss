@@ -1,14 +1,20 @@
 .footer-site {
   width: 100%;
+  background-color: $bg-color-footer;
+
 
   > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     min-height: 12rem;
-    background-color: $bg-color-footer;
+    
+    @media (min-width: $breakpoint-lg ) {
+      max-width: 1240px;
+    }
 
     small {
       width: 8rem;
