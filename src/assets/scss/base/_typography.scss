@@ -114,3 +114,10 @@
     }
   }
 }
+
+.card {
+  h2 {
+    font-size: $font-size-h2-card;
+    line-height: $line-height-h2-card;
+  }
+}

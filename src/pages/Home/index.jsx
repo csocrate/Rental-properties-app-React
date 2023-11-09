@@ -28,15 +28,17 @@ function Home() {
       <Banner 
         title = 'Chez vous, partout et ailleurs' />
       <div className="cards">
-      { 
-        propertiesData.map((property) => 
-          <Card
-            key = {property.id}
-            title = {property.title}
-            url = {`/propriete/${property.id}`}
-            cover = {property.cover}
-          />)
-      }
+        <div>
+          { 
+            propertiesData.map((property) => 
+              <Card
+                key = {property.id}
+                title = {property.title}
+                url = {`/propriete/${property.id}`}
+                cover = {property.cover}
+              />)
+          }
+        </div>
       </div>
     </>
   );

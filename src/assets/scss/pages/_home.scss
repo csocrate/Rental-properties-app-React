@@ -1,0 +1,31 @@
+.cards {
+  > div {
+    display: grid;
+    max-width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  
+    @media (min-width: $breakpoint-md ) {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    @media (min-width: $breakpoint-lg ) {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.5rem;
+      padding: 2rem;
+      border-radius: 10px;
+      background-color: $bg-color-cards;
+    }
+  
+    @media (min-width: $breakpoint-xl ) {
+      gap: 2rem;
+    }
+  
+    a {
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+}

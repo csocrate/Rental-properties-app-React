@@ -22,6 +22,8 @@
   $secondary-color:                      #FFF;
   $tertiary-color:                       #000;
 
+  $gray-light:                           lighten($tertiary-color, 96%);
+
   /**
     * Typography
     * 
@@ -102,9 +104,13 @@ $font-size-h1-banner-411:                 $font-size-normal * 1.5;
 $font-size-h1-banner-md:                  $font-size-normal * 1.65;
 $font-size-h1-banner-lg:                  $font-size-normal * 1.75;
 $font-size-h1-banner-xl:                  $font-size-normal * 2.25;
-$font-size-h1-banner-xxl:                  $font-size-normal * 2.5;
+$font-size-h1-banner-xxl:                 $font-size-normal * 2.5;
 $line-height-h1-banner:                   $line-height-normal * 1.25;
 
+//== Cards ==
+$font-size-h2-card:                       $font-size-normal * 1.125;
+$line-height-h2-card:                     $line-height-normal * 1.25;
+$bg-color-cards:                          $gray-light;
 // --------------------------------------------------
 // PAGES
 // --------------------------------------------------

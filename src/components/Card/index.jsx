@@ -4,14 +4,16 @@ import {Link} from "react-router-dom";
 function Card({title, url, cover}) {
 
   return (
-    <Link to = {url}>
-      <article className='Card'>
+      <article className='card'>
           <h2>
             {title}
           </h2>
-          <img src={cover} alt={title} />
+          <figure>
+            <Link to = {url}>
+              <img src={cover} alt={title} />
+            </Link>
+          </figure>
       </article>
-    </Link>
   );
 }
 
