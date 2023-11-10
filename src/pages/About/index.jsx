@@ -14,6 +14,7 @@ function About() {
             aboutList.map((item, index) =>              
               <Collapse 
                 key = {`id-${index}`}
+                title = {item.title}
                 number = {index}
                 text = {item.description}
               />)
