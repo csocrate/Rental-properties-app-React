@@ -22,7 +22,7 @@
   $secondary-color:                      #FFF;
   $tertiary-color:                       #000;
 
-  $gray-light:                           lighten($tertiary-color, 96%);
+  $gray-light:                           lighten($tertiary-color, 96.47%); // #F6F6F6
 
   /**
     * Typography
@@ -111,6 +111,16 @@ $line-height-h1-banner:                   $line-height-normal * 1.25;
 $font-size-h2-card:                       $font-size-normal * 1.125;
 $line-height-h2-card:                     $line-height-normal * 1.25;
 $bg-color-cards:                          $gray-light;
+
+//== Accordion ==
+$font-size-title-accordion-375:           $font-size-normal * .9;
+$font-size-title-accordion-md:            $font-size-normal;
+$font-size-title-accordion-lg:            $font-size-normal * 1.15;
+$font-size-title-accordion-xl:            $font-size-normal * 1.25;
+$font-size-p-accordion-375:               $font-size-normal * .85;
+$font-size-p-accordion-md:                $font-size-normal * .875;
+$font-size-p-accordion-xl:                $font-size-normal;
+
 // --------------------------------------------------
 // PAGES
 // --------------------------------------------------

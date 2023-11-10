@@ -121,3 +121,40 @@
     line-height: $line-height-h2-card;
   }
 }
+
+.accordion {
+  button {
+    font-weight: 500;
+
+    @media (min-width: $breakpoint-375 ) {
+      font-size: $font-size-title-accordion-375;
+    }
+
+    @media (min-width: $breakpoint-md ) {
+      font-size: $font-size-title-accordion-md;
+    }
+
+    @media (min-width: $breakpoint-lg ) {
+      font-size: $font-size-title-accordion-lg;
+    }
+
+    @media (min-width: $breakpoint-xl ) {
+      font-size: $font-size-title-accordion-xl;
+    }
+
+  }
+
+  p {
+    @media (min-width: $breakpoint-375 ) {
+      font-size: $font-size-p-accordion-375;
+    }
+
+    @media (min-width: $breakpoint-md ) {
+      font-size: $font-size-p-accordion-md;
+    }
+    
+    @media (min-width: $breakpoint-xl ) {
+      font-size: $font-size-p-accordion-xl;
+    }
+  }
+}
