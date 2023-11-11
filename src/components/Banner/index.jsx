@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
 
-function Banner({title}) {
+function Banner({title, image}) {
+
+  const bgImage = {backgroundImage: `url(${image})`};
 
   return (
     <>
-      <div className="banner">
+      <div className="banner" style = {bgImage}>
         <h1>
           {title}
         </h1>
@@ -14,7 +16,8 @@ function Banner({title}) {
 }
 
 Banner.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
+  image: PropTypes.string
 }
 
 export default Banner;

@@ -22,7 +22,9 @@
   $secondary-color:                      #FFF;
   $tertiary-color:                       #000;
 
+  $dark-light:                           lighten($tertiary-color, 30%); // #F6F6F6
   $gray-light:                           lighten($tertiary-color, 96.47%); // #F6F6F6
+  $cover-light:                          rgba($tertiary-color, .3);
 
   /**
     * Typography
@@ -98,6 +100,8 @@ $bg-color-footer:                         $tertiary-color;
 // --------------------------------------------------
 
 //== Banner ==
+$bg-color-banner:                         $dark-light;
+$bg-color-banner-after:                   $cover-light;
 $font-size-h1-banner:                     $font-size-normal * 1.3;
 $font-size-h1-banner-375:                 $font-size-normal * 1.4;
 $font-size-h1-banner-411:                 $font-size-normal * 1.5;

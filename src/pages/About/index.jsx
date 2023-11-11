@@ -7,7 +7,8 @@ function About() {
   return (
     <>
       <Banner 
-        title = 'A propos' />
+        title = 'A propos'
+        image = 'src/assets/images/about_banner.jpg' />
       <div className="about">
         <div>
           {

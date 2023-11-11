@@ -26,7 +26,8 @@ function Home() {
   return (
     <>
       <Banner 
-        title = 'Chez vous, partout et ailleurs' />
+        title = 'Chez vous, partout et ailleurs'
+        image = 'src/assets/images/home_banner.jpg' />
       <div className="cards">
         <div>
           { 
