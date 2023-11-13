@@ -1,4 +1,5 @@
 import Home from './pages/Home';
+import Property from './pages/Property';
 import About from './pages/About';
 import NotFound from './pages/404';
 import Root from './routes';
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: '',
         element: <Home />
+      },
+      {
+        path: 'propriete/:propertyId',
+        element: <Property />
       },
       {
         path: 'a-propos',

@@ -158,3 +158,67 @@
     }
   }
 }
+
+.property {
+  h1 {
+    font-size: $font-size-h1-property;
+    color: $color-h1-property;
+    line-height: $line-height-h1-property;
+    font-weight: $font-weight-h1-h2-h3;
+
+    @media (min-width: $breakpoint-375 ) {
+      font-size: $font-size-h1-property-375;
+    }
+
+    @media (min-width: $breakpoint-411 ) {
+      font-size: $font-size-h1-property-411;
+    }
+
+    @media (min-width: $breakpoint-md ) {
+      font-size: $font-size-h1-property-md;
+    }
+
+    @media (min-width: $breakpoint-lg ) {
+      font-size: $font-size-h1-property-lg;
+    }
+
+    @media (min-width: $breakpoint-xl ) {
+      font-size: $font-size-h1-property-xl;
+    }
+
+    @media (min-width: $breakpoint-xxl ) {
+      font-size: $font-size-h1-property-xxl;
+    }
+  }
+
+  h2 {
+    font-size: $font-size-h2-property;
+    color: $color-h2-property;
+    line-height: $line-height-h2-property;
+    font-weight: $font-weight-h1-h2-h3;
+
+    @media (min-width: $breakpoint-375 ) {
+      font-size: $font-size-h2-property-375;
+    }
+
+    @media (min-width: $breakpoint-411 ) {
+      font-size: $font-size-h2-property-411;
+    }
+
+    @media (min-width: $breakpoint-md ) {
+      font-size: $font-size-h2-property-md;
+    }
+
+    @media (min-width: $breakpoint-lg ) {
+      font-size: $font-size-h2-property-lg;
+    }
+
+    @media (min-width: $breakpoint-xl ) {
+      font-size: $font-size-h2-property-xl;
+    }
+
+    @media (min-width: $breakpoint-xxl ) {
+      font-size: $font-size-h2-property-xxl;
+    }
+  }
+}

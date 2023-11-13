@@ -143,3 +143,25 @@ $line-height-h1-404:                      $line-height-normal;
 $line-height-p-404:                       $line-height-normal * 1.35;
 $font-weight-a-404:                       500;
 $not-found-error-color:                   $primary-color;
+
+//== Property ==
+$font-size-h1-property:                   $font-size-normal * 1.2;
+$font-size-h1-property-375:               $font-size-normal * 1.3;
+$font-size-h1-property-411:               $font-size-normal * 1.4;
+$font-size-h1-property-md:                $font-size-normal * 1.4;
+$font-size-h1-property-lg:                $font-size-normal * 1.55;
+$font-size-h1-property-xl:                $font-size-normal * 1.875;
+$font-size-h1-property-xxl:               $font-size-normal * 1.975;
+$line-height-h1-property:                 $line-height-normal * 1.25;
+
+$font-size-h2-property:                   $font-size-normal * .875;
+$font-size-h2-property-375:               $font-size-normal * .975;
+$font-size-h2-property-411:               $font-size-normal;
+$font-size-h2-property-md:                $font-size-normal * 1.025;
+$font-size-h2-property-lg:                $font-size-normal * 1.025;
+$font-size-h2-property-xl:                $font-size-normal * 1.025;
+$font-size-h2-property-xxl:               $font-size-normal * 1.025;
+$line-height-h2-property:                 $line-height-normal * 1.25;
+
+$color-h1-property:                       $primary-color;
+$color-h2-property:                       $primary-color;
