@@ -22,8 +22,9 @@
   $secondary-color:                      #FFF;
   $tertiary-color:                       #000;
 
-  $dark-light:                           lighten($tertiary-color, 30%); // #F6F6F6
+  $dark-light:                           lighten($tertiary-color, 30%);
   $gray-light:                           lighten($tertiary-color, 96.47%); // #F6F6F6
+  $gray:                                 lighten($tertiary-color, 80%);
   $cover-light:                          rgba($tertiary-color, .3);
 
   /**
@@ -147,13 +148,11 @@ $not-found-error-color:                   $primary-color;
 //== Property ==
 $font-size-h1-property:                   $font-size-normal * 1.2;
 $font-size-h1-property-375:               $font-size-normal * 1.3;
-$font-size-h1-property-411:               $font-size-normal * 1.4;
+$font-size-h1-property-411:               $font-size-normal * 1.35;
 $font-size-h1-property-md:                $font-size-normal * 1.4;
 $font-size-h1-property-lg:                $font-size-normal * 1.55;
 $font-size-h1-property-xl:                $font-size-normal * 1.875;
 $font-size-h1-property-xxl:               $font-size-normal * 1.975;
-$line-height-h1-property:                 $line-height-normal * 1.25;
-
 $font-size-h2-property:                   $font-size-normal * .875;
 $font-size-h2-property-375:               $font-size-normal * .975;
 $font-size-h2-property-411:               $font-size-normal;
@@ -161,7 +160,20 @@ $font-size-h2-property-md:                $font-size-normal * 1.025;
 $font-size-h2-property-lg:                $font-size-normal * 1.025;
 $font-size-h2-property-xl:                $font-size-normal * 1.025;
 $font-size-h2-property-xxl:               $font-size-normal * 1.025;
+$font-size-li-property:                   $font-size-normal * .775;
+$font-size-span-property:                 $font-size-normal * .985;
+$font-size-span-property-md:              $font-size-normal;
+
+$line-height-h1-property:                 $line-height-normal * 1.45;
 $line-height-h2-property:                 $line-height-normal * 1.25;
+$line-height-li-property:                 $line-height-normal * 2.25; 
+$line-height-span-property:               $line-height-normal * 1.35;
+$line-height-i-property:                  $line-height-normal * 2.25;
+$font-weight-li-property:                 500;
 
 $color-h1-property:                       $primary-color;
 $color-h2-property:                       $primary-color;
+$color-li-property:                       $secondary-color;
+$color-span-property:                     $primary-color;
+$color-rating-star-property:              $gray;
+$bg-color-li-property:                    $primary-color;

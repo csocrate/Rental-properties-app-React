@@ -221,4 +221,28 @@
       font-size: $font-size-h2-property-xxl;
     }
   }
+
+  li {
+    font-size: $font-size-li-property;
+    line-height: $line-height-li-property;
+    font-weight: $font-weight-li-property;
+    color: $color-li-property;
+  }
+
+  span {
+    font-size: $font-size-span-property;
+    line-height: $line-height-span-property;
+    text-transform: capitalize;
+    text-align: right;
+    color: $color-span-property;
+
+    @media (min-width: $breakpoint-md ) {
+      font-size: $font-size-span-property-md;
+    }
+  }
+
+  i {
+    line-height: $line-height-i-property;
+    color: $color-rating-star-property;
+  }
 }

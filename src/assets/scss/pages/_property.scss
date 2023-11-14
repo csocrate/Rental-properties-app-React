@@ -1,5 +1,110 @@
 .property {
-  h1 {
-    margin-bottom: .5rem;
+
+  > div {
+
+    @media (min-width: $breakpoint-md ) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .part-left {      
+      h1 {
+        margin-bottom: .75rem;
+    
+        @media (min-width: $breakpoint-md ) {
+          max-width: 400px;
+          margin-bottom: .35rem;
+        }
+    
+        @media (min-width: $breakpoint-lg ) {
+          max-width: unset;
+          margin-bottom: .05rem;
+        }
+      }
+      
+      h2 {
+        margin-bottom: .5rem;
+    
+        @media (min-width: $breakpoint-md ) {
+          margin-bottom: 1.35rem;
+        }
+      }
+    
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .875rem;
+        max-width: 400px;
+        margin-top: .875rem;
+        margin-bottom: 1.35rem;
+        padding-left: 0;
+    
+        @media (min-width: $breakpoint-lg ) {
+          max-width: unset;
+        }
+    
+        li {
+          display: inline-block;
+          padding-left: 1.85rem;
+          padding-right: 1.85rem;
+          border-radius: 10px;
+          background-color: $primary-color;
+        }
+      }
+    }    
+
+    .part-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (min-width: $breakpoint-md ) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      @media (min-width: $breakpoint-lg ) {
+        justify-content: space-between;
+      }
+      
+      &__host {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 142px;
+        order: 2;
+
+        @media (min-width: $breakpoint-md ) {
+          order: 1;
+        }
+
+        span {
+          display: inline-block;
+          width: 50%;
+        }
+      
+        img {
+          display: block;
+          width: 58px;
+          height: auto;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      &__rating {
+        display: flex;
+        justify-content: space-between;
+        max-width: 112px;
+
+        @media (min-width: $breakpoint-md ) {
+          order: 2;
+        }
+
+        @media (min-width: $breakpoint-lg ) {
+          margin-bottom: 1.35rem;
+        }
+      }
+    }
   }
 }
