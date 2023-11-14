@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import propertiesData from '../../datas/properties.json';
+import StarRating from '../../components/StarRating';
 
 function Property() {
 
@@ -37,11 +38,16 @@ function Property() {
             <img aria-hidden="true" src={host.picture} alt={host.name} />
           </div>
           <div className='part-right__rating'>
-            <i className='fa-solid fa-star' aria-hidden='true'></i>
-            <i className='fa-solid fa-star' aria-hidden='true'></i>
-            <i className='fa-solid fa-star' aria-hidden='true'></i>
-            <i className='fa-solid fa-star' aria-hidden='true'></i>
-            <i className='fa-solid fa-star' aria-hidden='true'></i>
+            <div>
+              <i className='fa-solid fa-star' aria-hidden='true'></i>
+              <i className='fa-solid fa-star' aria-hidden='true'></i>
+              <i className='fa-solid fa-star' aria-hidden='true'></i>
+              <i className='fa-solid fa-star' aria-hidden='true'></i>
+              <i className='fa-solid fa-star' aria-hidden='true'></i>
+            </div>
+            <StarRating
+              rating = {property.rating}
+               />
           </div>
         </div>
       </div>

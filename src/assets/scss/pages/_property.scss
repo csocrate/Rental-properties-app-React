@@ -93,16 +93,26 @@
       }
 
       &__rating {
-        display: flex;
-        justify-content: space-between;
-        max-width: 112px;
-
+        position: relative;
+    
         @media (min-width: $breakpoint-md ) {
           order: 2;
         }
 
         @media (min-width: $breakpoint-lg ) {
           margin-bottom: 1.35rem;
+        }
+
+        div {
+          display: flex;
+          justify-content: space-between;
+          gap: .25rem;
+
+          &:last-child {
+            position: absolute;
+            top: -2px;
+            left: 0;
+          }
         }
       }
     }
