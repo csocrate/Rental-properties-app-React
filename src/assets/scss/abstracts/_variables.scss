@@ -161,19 +161,21 @@ $font-size-h2-property-lg:                $font-size-normal * 1.025;
 $font-size-h2-property-xl:                $font-size-normal * 1.025;
 $font-size-h2-property-xxl:               $font-size-normal * 1.025;
 $font-size-li-property:                   $font-size-normal * .775;
-$font-size-span-property:                 $font-size-normal * .985;
-$font-size-span-property-md:              $font-size-normal;
+$font-size-host-name-property:            $font-size-normal * .985;
+$font-size-host-name-property-md:         $font-size-normal;
+$font-size-star-property-md:              $font-size-normal * 1.05;
+$font-size-star-property-lg:              $font-size-normal * 1.15;
+$font-size-star-property-xl:              $font-size-normal * 1.25;
 
 $line-height-h1-property:                 $line-height-normal * 1.45;
 $line-height-h2-property:                 $line-height-normal * 1.25;
 $line-height-li-property:                 $line-height-normal * 2.25; 
-$line-height-span-property:               $line-height-normal * 1.35;
-$line-height-i-property:                  $line-height-normal * 2.25;
+$line-height-host-name-property:          $line-height-normal * 1.35;
 $font-weight-li-property:                 500;
 
 $color-h1-property:                       $primary-color;
 $color-h2-property:                       $primary-color;
 $color-li-property:                       $secondary-color;
-$color-span-property:                     $primary-color;
-$color-rating-star-property:              $gray;
+$color-host-name-property:                $primary-color;
+$color-star-property:                     $gray;
 $bg-color-li-property:                    $primary-color;

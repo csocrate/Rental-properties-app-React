@@ -229,19 +229,40 @@
     color: $color-li-property;
   }
 
-  span {
-    font-size: $font-size-span-property;
-    line-height: $line-height-span-property;
-    text-transform: capitalize;
-    text-align: right;
-    color: $color-span-property;
+  .part-right__host {
+    span {
+      font-size: $font-size-host-name-property;
+      line-height: $line-height-host-name-property;
+      text-transform: capitalize;
+      text-align: right;
+      color: $color-host-name-property;
 
-    @media (min-width: $breakpoint-md ) {
-      font-size: $font-size-span-property-md;
+      @media (min-width: $breakpoint-md ) {
+        font-size: $font-size-host-name-property-md;
+      }
     }
   }
 
-  i {
-    color: $color-rating-star-property;
+  .part-right__rating {
+    div {
+
+      span {
+        @media (min-width: $breakpoint-md ) {
+          font-size: $font-size-star-property-md;
+        }
+        @media (min-width: $breakpoint-lg ) {
+          font-size: $font-size-star-property-lg;
+        }
+        @media (min-width: $breakpoint-xl ) {
+          font-size: $font-size-star-property-xl;
+        }
+      }
+
+      &:first-child {
+        span {
+          color: $color-star-property;
+        }
+      }
+    }
   }
 }

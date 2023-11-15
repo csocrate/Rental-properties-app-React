@@ -7,7 +7,6 @@ const Accordion = styled.article`
   margin-top: .75rem;
   margin-bottom: .75rem;
   border-radius: 5px;
-  background-color: #F6F6F6;
 `;
 
 const Btn = styled.button`
@@ -53,7 +52,9 @@ function Collapse({title, number, text}) {
   }
 
   return isExpanded ? (
-    <Accordion className="accordion">
+    <Accordion 
+      className='accordion'      
+      style = {{backgroundColor: '#F6F6F6'}}>
       <h3>
         <Btn onClick = {handleCollapsible}
                 id={`accordion-header-${number}`}
@@ -82,7 +83,7 @@ function Collapse({title, number, text}) {
       </Panel>
     </Accordion>
   ) : (
-    <Accordion className="accordion">
+    <Accordion className='accordion'>
       <h3>
         <Btn onClick = {() =>setIsExpanded(true)}
                 id={`accordion-header-${number}`}
