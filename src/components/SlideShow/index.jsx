@@ -1,58 +1,73 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+const SlideShow = styled.div`
+  position: relative;
+`;
+
+const BtnContainer = styled.div`
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`;
+
+const Btn = styled.button`
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+`;
+
+const Svg = styled.svg`
+  width: 28%;
+  height: 28%;
+`;
+
+const ImagesSeries = styled.ul`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 415px;
+  border-radius: 10px;
+  padding-left: 0;
+  overflow: hidden;
+`;
+const Li = styled.li`
+  display: block;
+  position: relative;
+  width: 100%;
+`;
+
+const Image = styled.img`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  max-width: 100%;
+  margin: auto 0;
+  object-fit: cover;
+  border-radius: 10px;
+`;
+
 function Slideshow({images, title}) {
 
   const handlePreviousSlide = () => {};
 
   const handleNextSlide = () => {};
 
-  const SlideShow = styled.div`
-    position: relative;
-  `;
-
-  const BtnContainer = styled.div`
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  `;
-
-  const Btn = styled.button`
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    background: none;
-  `;
-
-  const Svg = styled.svg`
-    width: 28%;
-    height: 28%;
-  `;
-
-  const ImagesSeries = styled.ul`
-    padding-left: 0;
-    list-style: none;
-  `;
-
-  const Image = styled.img`
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  `;
-
-  return (
+  return images.length > 1 ? (
     <>
     <SlideShow className='slideshow'>
       <ImagesSeries>
         {
           images.map((image, index) => 
-            <li key={`slide-${index}`}>
+            <Li key={`slide-${index}`}>
               <Image src={image} alt={title} />
-            </li>)
+            </Li>)
         }
       </ImagesSeries>
       <BtnContainer>
@@ -73,7 +88,18 @@ function Slideshow({images, title}) {
       </BtnContainer>
     </SlideShow>
     </>
-  );
+  ) : (
+    <SlideShow className='slideshow'>
+      <ImagesSeries>
+        {
+          images.map((image, index) => 
+            <li key={`slide-${index}`}>
+              <Image src={image} alt={title} />
+            </li>)
+        }
+      </ImagesSeries>
+    </SlideShow>
+  )
 }
 
 Slideshow.propTypes = {
