@@ -8,14 +8,15 @@
   'base/typography';
 
 @import
+  'layout/footer',
   'layout/header',
-  'layout/main',
-  'layout/footer';
+  'layout/main';
 
 @import
+  'components/accordion',
   'components/banner',
   'components/card',
-  'components/accordion';
+  'components/slideshow';
 
 @import
   'pages/404',
