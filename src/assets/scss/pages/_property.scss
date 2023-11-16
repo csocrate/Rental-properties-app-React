@@ -1,163 +1,168 @@
 .property {
+  display: flex;
+  flex-direction: column;
 
-  > div {
+  &__header {
+    order: 2;
 
-    &:first-child {
+    @media (min-width: $breakpoint-md ) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .part-left {      
+      h1 {
+        margin-bottom: .75rem;
+    
+        @media (min-width: $breakpoint-md ) {
+          max-width: 400px;
+          margin-bottom: .35rem;
+        }
+    
+        @media (min-width: $breakpoint-lg ) {
+          max-width: unset;
+          margin-bottom: .05rem;
+        }
+      }
+      
+      h2 {
+        margin-bottom: .5rem;
+    
+        @media (min-width: $breakpoint-md ) {
+          margin-bottom: 1.35rem;
+        }
+      }
+    
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .875rem;
+        max-width: 400px;
+        margin-top: .875rem;
+        margin-bottom: 1.35rem;
+        padding-left: 0;
+    
+        @media (min-width: $breakpoint-lg ) {
+          max-width: unset;
+        }
+    
+        li {
+          display: inline-block;
+          padding-left: 1.85rem;
+          padding-right: 1.85rem;
+          border-radius: 10px;
+          background-color: $primary-color;
+        }
+      }
+    }    
+
+    .part-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
       @media (min-width: $breakpoint-md ) {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        max-height: 6rem;
       }
 
-      .part-left {      
-        h1 {
-          margin-bottom: .75rem;
+      @media (min-width: $breakpoint-lg ) {
+        justify-content: space-between;
+        max-height: 7.875rem;
+      }
       
-          @media (min-width: $breakpoint-md ) {
-            max-width: 400px;
-            margin-bottom: .35rem;
-          }
-      
-          @media (min-width: $breakpoint-lg ) {
-            max-width: unset;
-            margin-bottom: .05rem;
-          }
-        }
-        
-        h2 {
-          margin-bottom: .5rem;
-      
-          @media (min-width: $breakpoint-md ) {
-            margin-bottom: 1.35rem;
-          }
-        }
-      
-        ul {
-          display: flex;
-          flex-wrap: wrap;
-          gap: .875rem;
-          max-width: 400px;
-          margin-top: .875rem;
-          margin-bottom: 1.35rem;
-          padding-left: 0;
-      
-          @media (min-width: $breakpoint-lg ) {
-            max-width: unset;
-          }
-      
-          li {
-            display: inline-block;
-            padding-left: 1.85rem;
-            padding-right: 1.85rem;
-            border-radius: 10px;
-            background-color: $primary-color;
-          }
-        }
-      }    
-
-      .part-right {
+      &__host {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        max-width: 142px;
+        order: 2;
 
         @media (min-width: $breakpoint-md ) {
-          flex-direction: column;
-          max-height: 6rem;
+          order: 1;
+        }
+
+        span {
+          display: inline-block;
+          width: 50%;
+        }
+      
+        img {
+          display: block;
+          width: 50px;
+          height: auto;
+          border-radius: 50%;
+          object-fit: cover;
+
+          @media (min-width: $breakpoint-lg ) {
+            width: 58px;
+          }
+        }
+      }
+
+      &__rating {
+        position: relative;
+    
+        @media (min-width: $breakpoint-md ) {
+          order: 2;
         }
 
         @media (min-width: $breakpoint-lg ) {
-          justify-content: space-between;
-          max-height: 7.875rem;
+          margin-bottom: 1.35rem;
         }
-        
-        &__host {
+
+        div {
           display: flex;
           justify-content: space-between;
-          align-items: center;
-          max-width: 142px;
-          order: 2;
-
-          @media (min-width: $breakpoint-md ) {
-            order: 1;
-          }
-
-          span {
-            display: inline-block;
-            width: 50%;
-          }
-        
-          img {
-            display: block;
-            width: 50px;
-            height: auto;
-            border-radius: 50%;
-            object-fit: cover;
-
-            @media (min-width: $breakpoint-lg ) {
-              width: 58px;
-            }
-          }
-        }
-
-        &__rating {
-          position: relative;
-      
-          @media (min-width: $breakpoint-md ) {
-            order: 2;
-          }
-
-          @media (min-width: $breakpoint-lg ) {
-            margin-bottom: 1.35rem;
-          }
-
-          div {
-            display: flex;
-            justify-content: space-between;
-            gap: .25rem;
-
-            &:last-child {
-              position: absolute;
-              top: 0;
-              left: 0;
-            }
-          }
-        }
-      }
-    }
-
-    &:last-child {
-      display: flex;
-      flex-direction: column;
-      margin-top: .65rem;
-      margin-bottom: .65rem;
-    
-      @media (min-width: $breakpoint-md ) {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 2rem;
-        width: 100%;
-        margin-bottom: 1rem;
-      }
-      
-      @media (min-width: $breakpoint-lg ) {
-        gap: 3rem;
-      }
-      
-      @media (min-width: $breakpoint-lg ) {
-        gap: 4rem;
-      }
-
-      .accordion {
-        p {
-          display: flex;
-          flex-direction: column;
           gap: .25rem;
-      
-          @media (min-width: $breakpoint-lg ) {
-            gap: .45rem;
+
+          &:last-child {
+            position: absolute;
+            top: 0;
+            left: 0;
           }
         }
       }
     }
+  }
+
+  &__main {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    margin-top: .65rem;
+    margin-bottom: .65rem;
+  
+    @media (min-width: $breakpoint-md ) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    
+    @media (min-width: $breakpoint-lg ) {
+      gap: 3rem;
+    }
+    
+    @media (min-width: $breakpoint-lg ) {
+      gap: 4rem;
+    }
+
+    .accordion {
+      p {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+    
+        @media (min-width: $breakpoint-lg ) {
+          gap: .45rem;
+        }
+      }
+    }
+  }
+
+  &__carousel {
+    order: 1;
   }
 }

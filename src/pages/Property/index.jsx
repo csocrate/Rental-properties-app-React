@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import propertiesData from '../../datas/properties.json';
 import StarRating from '../../components/StarRating';
 import Collapse from '../../components/Collapse';
+import Slideshow from '../../components/SlideShow';
 
 function Property() {
 
@@ -16,7 +17,7 @@ function Property() {
 
   let host = property.host;
 
-  const equipments = property.equipments
+  let equipments = property.equipments
     .map((equipment, index) => <span key={index}>{equipment}</span>);
 
   let accordions = [
@@ -33,7 +34,7 @@ function Property() {
   return (
     <>
       <div className='property'>
-        <div>
+        <div className='property__header'>
           <div className='part-left'>
             <h1>
               {property.title}
@@ -65,7 +66,7 @@ function Property() {
             </div>
           </div>
         </div>
-        <div>
+        <div className='property__main'>
           {
             accordions.map((item, index) =>              
               <Collapse 
@@ -75,6 +76,11 @@ function Property() {
                 text = {item.description}
               />)
           }
+        </div>
+        <div className='property__carousel'>
+          <Slideshow 
+            images = {property.pictures}
+            title = {property.title} />
         </div>
       </div>
     </>
