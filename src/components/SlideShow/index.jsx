@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import styled from 'styled-components';
 
 const SlideShow = styled.div`
@@ -29,18 +30,16 @@ const Svg = styled.svg`
 
 const ImagesSeries = styled.ul`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  flex-wrap: nowrap;
   height: 415px;
   border-radius: 10px;
   padding-left: 0;
   overflow: hidden;
 `;
 const Li = styled.li`
-  display: block;
+  display: none;
   position: relative;
-  width: 100%;
+  min-width: 100%;
 `;
 
 const Image = styled.img`
@@ -55,9 +54,15 @@ const Image = styled.img`
 
 function Slideshow({images, title}) {
 
-  const handlePreviousSlide = () => {};
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleNextSlide = () => {};
+  let lastIndex = images.length -1;
+
+  const handleNextSlide = () => 
+    (currentIndex == lastIndex ? setCurrentIndex(0) : setCurrentIndex(currentIndex + 1));    
+
+  const handlePreviousSlide = () => 
+    (currentIndex == 0 ? setCurrentIndex(lastIndex) : setCurrentIndex(currentIndex - 1));
 
   return images.length > 1 ? (
     <>
@@ -65,7 +70,7 @@ function Slideshow({images, title}) {
       <ImagesSeries>
         {
           images.map((image, index) => 
-            <Li key={`slide-${index}`}>
+            <Li key={`slide-${index}`} className={index == currentIndex ? 'active' : ''} >
               <Image src={image} alt={title} />
             </Li>)
         }
@@ -93,9 +98,9 @@ function Slideshow({images, title}) {
       <ImagesSeries>
         {
           images.map((image, index) => 
-            <li key={`slide-${index}`}>
+            <Li key={`slide-${index}`} className='active'>
               <Image src={image} alt={title} />
-            </li>)
+            </Li>)
         }
       </ImagesSeries>
     </SlideShow>
