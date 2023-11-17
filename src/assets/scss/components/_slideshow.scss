@@ -1,5 +1,120 @@
 .slideshow {
-  .active {
-    display: block;
+  position: relative;
+  margin-bottom: .75rem;
+        
+  @media (min-width: $breakpoint-md ) {
+    margin-bottom: .975rem;
+  }
+        
+  @media (min-width: $breakpoint-lg ) {
+    margin-bottom: 1.15rem;
+  }
+        
+  @media (min-width: $breakpoint-xl ) {
+    margin-bottom: 1.65rem;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 255px;
+    border-radius: 10px;
+    padding-left: 0;
+    overflow: hidden;
+        
+    @media (min-width: $breakpoint-lg ) {
+      height: 415px;
+    }
+
+    li {
+      display: none;
+      position: relative;
+      min-width: 100%;
+
+      &.active {
+        display: block;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        margin: auto 0;
+        object-fit: cover;
+        border-radius: 10px;
+
+        @media (min-width: $breakpoint-md ) {
+          width: unset;
+          height: unset;
+        }
+      }
+    }
+  }
+
+  > div {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    button {
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      background: none;
+
+      &.previous-btn {
+        margin-left: .15rem;
+
+        @media (min-width: $breakpoint-375 ) {
+          margin-left: .25rem;
+        }
+
+        @media (min-width: $breakpoint-md ) {
+          margin-left: .28rem;
+        }
+      }
+
+      &.next-btn {
+        margin-right: .15rem;
+
+        @media (min-width: $breakpoint-375 ) {
+          margin-right: .25rem;
+        }
+
+        @media (min-width: $breakpoint-md ) {
+          margin-right: .28rem;
+        }
+      }
+      
+      svg {
+        @media (min-width: $breakpoint-411 ) {
+          width: 22px;
+          height: 22px;
+        }
+        @media (min-width: $breakpoint-md ) {
+          width: 28px;
+          height: 28px;
+        }
+        @media (min-width: $breakpoint-lg ) {
+          width: 30px;
+          height: 30px;
+        }
+        @media (min-width: $breakpoint-xl ) {
+          width: 40px;
+          height: 40px;
+        }
+        @media (min-width: $breakpoint-xxl ) {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
   }
 }
