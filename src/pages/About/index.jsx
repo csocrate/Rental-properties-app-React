@@ -17,7 +17,7 @@ function About() {
                 key = {`id-${index}`}
                 title = {item.title}
                 number = {index}
-                text = {item.description}
+                dataArray = {[item.description]}
               />)
           }
         </div>

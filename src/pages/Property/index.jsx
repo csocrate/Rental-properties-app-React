@@ -17,9 +17,6 @@ function Property() {
 
   let host = property.host;
 
-  let equipments = property.equipments
-    .map((equipment, index) => <span key={index}>{equipment}</span>);
-
   let accordions = [
     {
       title: 'Description',
@@ -27,7 +24,7 @@ function Property() {
     },
     {
       title: 'Equipements',
-      description: equipments
+      description: property.equipments
     }
   ];
   
@@ -68,12 +65,12 @@ function Property() {
         </div>
         <div className='property__main'>
           {
-            accordions.map((item, index) =>              
+            accordions.map((item, index) =>                       
               <Collapse 
                 key = {`id-${index}`}
                 title = {item.title}
                 number = {index}
-                text = {item.description}
+                dataArray = {[item.description].flat()}
               />)
           }
         </div>

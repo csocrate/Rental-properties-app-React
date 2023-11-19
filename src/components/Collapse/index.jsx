@@ -38,12 +38,18 @@ const Panel = styled.div`
   padding-right: 1rem;
 `;
 
-const PanelText = styled.p`
-  font-size: .775em;
-  color: #FF6060;
+const PanelContent = styled.ul`
+  padding-left: 0;
 `;
 
-function Collapse({title, number, text}) {
+const Li = styled.li`
+  font-size: 1em!important;
+  line-height: 1.5!important;
+  list-style: none;
+  color: #FF6060!important;
+`;
+
+function Collapse({title, number, dataArray}) {
 
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -77,9 +83,13 @@ function Collapse({title, number, text}) {
           className="accordion__collapse"
           role="region"
           aria-labelledby={`accordion-header-${number}`}>
-        <PanelText>
-          {text}
-        </PanelText>
+        <PanelContent>
+          { 
+            dataArray
+              .map((equipment, index) => 
+                <Li key={index}>{equipment}</Li>)
+          }
+        </PanelContent>
       </Panel>
     </Accordion>
   ) : (
@@ -110,13 +120,13 @@ function Collapse({title, number, text}) {
 Collapse.propTypes = {
   title: PropTypes.string.isRequired,
   number: PropTypes.number.isRequired,
-  text: PropTypes.string.isRequired
+  dataArray: PropTypes.node.isRequired
 }
 
 Collapse.defaultProps = {
   title: '',
   number: '',
-  text: ''
+  dataArray: []
 }
 
 export default Collapse;
