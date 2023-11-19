@@ -1,27 +1,8 @@
 import Banner from '../../components/Banner';
-import {useState, useEffect} from 'react';
+import propertiesData from '../../datas/properties.json';
 import Card from '../../components/Card';
 
 function Home() {
-  const [propertiesData, setPropertiesData] = useState([])
-
-  const getPropertiesData = async () => {
-    return fetch(`src/datas/properties.json`)
-      .then(response => {
-        // Throws an error if the request fails
-        if (!response.ok) {
-          throw new Error(`HTTP error: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setPropertiesData(data);
-      })
-  };
-
-  useEffect(() => {
-    getPropertiesData();
-  }, []);
 
   return (
     <>
