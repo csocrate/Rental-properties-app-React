@@ -118,13 +118,19 @@ $line-height-h2-card:                     $line-height-normal * 1.25;
 $bg-color-cards:                          $gray-light;
 
 //== Accordion ==
-$font-size-title-accordion-375:           $font-size-normal * .9;
+$font-size-title-accordion:               $font-size-normal;
 $font-size-title-accordion-md:            $font-size-normal;
 $font-size-title-accordion-lg:            $font-size-normal * 1.15;
 $font-size-title-accordion-xl:            $font-size-normal * 1.25;
-$font-size-p-accordion-375:               $font-size-normal * .85;
-$font-size-p-accordion-md:                $font-size-normal * .875;
-$font-size-p-accordion-xl:                $font-size-normal;
+$font-size-li-accordion-md:               $font-size-normal * .9;
+$font-size-li-accordion-lg:               $font-size-normal * .975;
+$font-size-li-accordion-xl:               $font-size-normal * 1.1;
+$font-size-li-accordion-xxl:              $font-size-normal * 1.15;
+$font-weight-title-accordion:             500;
+$line-height-li-accordion:                1.5;
+$color-title-accordion:                   $secondary-color;
+$color-li-accordion:                      $primary-color;
+$bg-color-accordion:                      $primary-color;
 
 // --------------------------------------------------
 // PAGES
@@ -177,5 +183,6 @@ $color-h1-property:                       $primary-color;
 $color-h2-property:                       $primary-color;
 $color-li-property:                       $secondary-color;
 $color-host-name-property:                $primary-color;
-$color-star-property:                     $gray;
+$color-star-default:                      $gray;
+$color-star-rating:                       $primary-color;
 $bg-color-li-property:                    $primary-color;

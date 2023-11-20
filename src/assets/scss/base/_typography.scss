@@ -124,11 +124,9 @@
 
 .accordion {
   button {
-    font-weight: 500;
-
-    @media (min-width: $breakpoint-375 ) {
-      font-size: $font-size-title-accordion-375;
-    }
+    font-size: $font-size-title-accordion;
+    font-weight: $font-weight-title-accordion;
+    color: $color-title-accordion;
 
     @media (min-width: $breakpoint-md ) {
       font-size: $font-size-title-accordion-md;
@@ -144,17 +142,26 @@
 
   }
 
-  p {
-    @media (min-width: $breakpoint-375 ) {
-      font-size: $font-size-p-accordion-375;
-    }
+  li {
+    font-size: $font-size-title-accordion;
+    line-height: $line-height-li-accordion;
+    color: $color-li-accordion;
+    list-style: none;
 
     @media (min-width: $breakpoint-md ) {
-      font-size: $font-size-p-accordion-md;
+      font-size: $font-size-li-accordion-md;
+    }
+
+    @media (min-width: $breakpoint-lg ) {
+      font-size: $font-size-li-accordion-lg;
     }
     
     @media (min-width: $breakpoint-xl ) {
-      font-size: $font-size-p-accordion-xl;
+      font-size: $font-size-li-accordion-xl;
+    }
+    
+    @media (min-width: $breakpoint-xxl ) {
+      font-size: $font-size-li-accordion-xxl;
     }
   }
 }
@@ -222,47 +229,56 @@
     }
   }
 
-  li {
-    font-size: $font-size-li-property;
-    line-height: $line-height-li-property;
-    font-weight: $font-weight-li-property;
-    color: $color-li-property;
-  }
-
-  .part-right__host {
-    span {
-      font-size: $font-size-host-name-property;
-      line-height: $line-height-host-name-property;
-      text-transform: capitalize;
-      text-align: right;
-      color: $color-host-name-property;
-
-      @media (min-width: $breakpoint-md ) {
-        font-size: $font-size-host-name-property-md;
-      }
+  .part-left {
+    li {
+      font-size: $font-size-li-property;
+      line-height: $line-height-li-property;
+      font-weight: $font-weight-li-property;
+      color: $color-li-property;
     }
   }
 
-  .part-right__rating {
-    div {
-
+  .part-right {
+    &__host {
       span {
+        font-size: $font-size-host-name-property;
+        line-height: $line-height-host-name-property;
+        text-transform: capitalize;
+        text-align: right;
+        color: $color-host-name-property;
+  
         @media (min-width: $breakpoint-md ) {
-          font-size: $font-size-star-property-md;
-        }
-        @media (min-width: $breakpoint-lg ) {
-          font-size: $font-size-star-property-lg;
-        }
-        @media (min-width: $breakpoint-xl ) {
-          font-size: $font-size-star-property-xl;
+          font-size: $font-size-host-name-property-md;
         }
       }
+    }
 
-      &:first-child {
+    &__rating {
+      div {  
         span {
-          color: $color-star-property;
+          @media (min-width: $breakpoint-md ) {
+            font-size: $font-size-star-property-md;
+          }
+          @media (min-width: $breakpoint-lg ) {
+            font-size: $font-size-star-property-lg;
+          }
+          @media (min-width: $breakpoint-xl ) {
+            font-size: $font-size-star-property-xl;
+          }
         }
-      }
+  
+        &:first-child {
+          span {
+            color: $color-star-default;
+          }
+        }
+  
+        &:last-child {
+          span {
+            color: $color-star-rating;
+          }
+        }
+      }      
     }
   }
 }

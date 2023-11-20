@@ -1,9 +1,4 @@
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
-const StarIcon = styled.span`
-  color: #FF6060;
-`;
 
 function StarRating({rating}) {
 
@@ -13,7 +8,7 @@ function StarRating({rating}) {
       <div>
 			{stars.map((star) =>
 				parseInt(rating) >= star ? (
-					<StarIcon key={star.toString()} className='fa-solid fa-star' aria-hidden='true'> </StarIcon>
+					<span key={star.toString()} className='fa-solid fa-star' aria-hidden='true'></span>
 				) : null
 			)}
       </div>

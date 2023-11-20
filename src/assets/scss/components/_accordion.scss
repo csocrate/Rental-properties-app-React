@@ -1,4 +1,8 @@
 .accordion {
+  width: 100%;
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+  border-radius: 5px;
     
   @media (min-width: $breakpoint-lg ) {
     margin-top: 1rem!important;
@@ -11,6 +15,17 @@
   }
   
   button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: $bg-color-accordion;
 
     @media (min-width: $breakpoint-md ) {
       padding-top: .5rem;
@@ -28,6 +43,9 @@
     }
 
     svg {
+      width: 25px;
+      height: 24px;
+      cursor: pointer;
     
       @media (min-width: $breakpoint-lg ) {
         width: 27px;
@@ -42,6 +60,10 @@
   }
 
   &__collapse {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     
     @media (min-width: $breakpoint-md ) {
       padding-top: 1.5rem!important;
@@ -51,6 +73,10 @@
     @media (min-width: $breakpoint-xl ) {
       padding-top: 1.75rem!important;
       padding-bottom: 1.75rem!important;
+    }
+
+    ul {
+      padding-left: 0;
     }
   }
 }
