@@ -2,18 +2,20 @@
   > div {
     display: grid;
     max-width: 100%;
-    margin-top: 2rem;
+    margin-top: 1.25rem;
     margin-bottom: 2rem;
     grid-template-columns: 1fr;
     gap: 1rem;
   
     @media (min-width: $breakpoint-md ) {
       grid-template-columns: 1fr 1fr;
+      margin-top: 1.5rem;
     }
   
     @media (min-width: $breakpoint-lg ) {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 1.5rem;
+      margin-top: 2rem;
       padding: 2rem;
       border-radius: 10px;
       background-color: $bg-color-cards;

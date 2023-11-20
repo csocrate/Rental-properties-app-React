@@ -1,6 +1,7 @@
 import Banner from '../../components/Banner';
 import Collapse from '../../components/Collapse';
-import { aboutList } from '../../datas/aboutList'
+import { aboutList } from '../../datas/aboutList';
+import aboutBanner from '../../assets/images/about_banner.jpg';
 
 function About() {
 
@@ -8,7 +9,7 @@ function About() {
     <>
       <Banner 
         title = 'A propos'
-        image = 'src/assets/images/about_banner.jpg' />
+        image = {aboutBanner} />
       <div className="about">
         <div>
           {

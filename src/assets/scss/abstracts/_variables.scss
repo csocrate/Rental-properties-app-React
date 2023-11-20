@@ -22,9 +22,8 @@
   $secondary-color:                      #FFF;
   $tertiary-color:                       #000;
 
-  $dark-light:                           lighten($tertiary-color, 30%);
   $gray-light:                           lighten($tertiary-color, 96.47%); // #F6F6F6
-  $gray:                                 lighten($tertiary-color, 80%);
+  $gray:                                 lighten($tertiary-color, 80%); // #CCC
   $cover-light:                          rgba($tertiary-color, .3);
 
   /**
@@ -45,7 +44,7 @@
   $font-size-body:                        $font-size-init;
   $font-style-body:                       normal;
   $font-weight-body:                      400;
-  $line-height-body:                      19px;
+  $line-height-body:                      $line-height-normal * 1.188;
   $color-body:                            $secondary-color;
   $bg-color-body:                         $secondary-color;
 
@@ -101,7 +100,7 @@ $bg-color-footer:                         $tertiary-color;
 // --------------------------------------------------
 
 //== Banner ==
-$bg-color-banner:                         $dark-light;
+$bg-color-banner:                         $primary-color;
 $bg-color-banner-after:                   $cover-light;
 $font-size-h1-banner:                     $font-size-normal * 1.3;
 $font-size-h1-banner-375:                 $font-size-normal * 1.4;
@@ -127,7 +126,7 @@ $font-size-li-accordion-lg:               $font-size-normal * .975;
 $font-size-li-accordion-xl:               $font-size-normal * 1.1;
 $font-size-li-accordion-xxl:              $font-size-normal * 1.15;
 $font-weight-title-accordion:             500;
-$line-height-li-accordion:                1.5;
+$line-height-panel-accordion:             $line-height-normal * 1.5;
 $color-title-accordion:                   $secondary-color;
 $color-li-accordion:                      $primary-color;
 $bg-color-accordion:                      $primary-color;

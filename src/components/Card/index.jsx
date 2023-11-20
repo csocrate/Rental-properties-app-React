@@ -9,8 +9,8 @@ function Card({title, url, cover}) {
             {title}
           </h2>
           <figure>
-            <Link to = {url}>
-              <img src={cover} alt={title} />
+            <Link to = {url} >
+              <img src={cover} alt={title} loading="lazy"/>
             </Link>
           </figure>
       </article>
