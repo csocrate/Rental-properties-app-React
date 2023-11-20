@@ -1,10 +1,9 @@
-import { useRouteError } from "react-router-dom";
+import { useRouteError, Link } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 function NotFound() {
   const error = useRouteError();
-  console.log(error);
 
   const message = ' vous demandez n\'existe pas.';
   const home = 'Retourner sur la page d\'accueil';
@@ -15,7 +14,7 @@ function NotFound() {
       <main>
         <section id="error-page" className="not-found">
           <h1>
-            {error.status}
+            {!error.status ? '404' :  error.status}
           </h1>
           <p>
             <span>
@@ -25,11 +24,11 @@ function NotFound() {
               {message}
             </span>
           </p>
-          <a href="/">
+          <Link to="/">
             <small>
               {home}            
             </small>
-          </a>
+          </Link>
         </section>
       </main>
       <Footer />
