@@ -1,8 +1,8 @@
 .main {
-  > div {
+  >div {
     width: 90%;
     margin: 0 auto;
-    
+
     @media (min-width: $breakpoint-lg ) {
       max-width: 1240px;
     }

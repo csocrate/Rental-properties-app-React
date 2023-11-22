@@ -1,15 +1,15 @@
 .slideshow {
   position: relative;
   margin-bottom: .75rem;
-        
+
   @media (min-width: $breakpoint-md ) {
     margin-bottom: .975rem;
   }
-        
+
   @media (min-width: $breakpoint-lg ) {
     margin-bottom: 1.15rem;
   }
-        
+
   @media (min-width: $breakpoint-xl ) {
     margin-bottom: 1.65rem;
   }
@@ -21,7 +21,7 @@
     border-radius: 10px;
     padding-left: 0;
     overflow: hidden;
-        
+
     @media (min-width: $breakpoint-lg ) {
       height: 415px;
     }
@@ -54,7 +54,7 @@
     }
   }
 
-  > div {
+  >div {
     position: absolute;
     top: 0;
     display: flex;
@@ -92,24 +92,28 @@
           margin-right: .28rem;
         }
       }
-      
+
       svg {
         @media (min-width: $breakpoint-411 ) {
           width: 22px;
           height: 22px;
         }
+
         @media (min-width: $breakpoint-md ) {
           width: 28px;
           height: 28px;
         }
+
         @media (min-width: $breakpoint-lg ) {
           width: 30px;
           height: 30px;
         }
+
         @media (min-width: $breakpoint-xl ) {
           width: 40px;
           height: 40px;
         }
+
         @media (min-width: $breakpoint-xxl ) {
           width: 45px;
           height: 45px;

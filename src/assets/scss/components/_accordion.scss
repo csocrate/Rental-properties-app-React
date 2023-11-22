@@ -3,18 +3,20 @@
   margin-top: .75rem;
   margin-bottom: .75rem;
   border-radius: 5px;
-    
+
   @media (min-width: $breakpoint-lg ) {
-    margin-top: 1rem!important;
-    margin-bottom: 1rem!important;;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    ;
   }
-    
+
   @media (min-width: $breakpoint-lg ) {
-    margin-top: 1.25rem!important;
-    margin-bottom: 1.25rem!important;;
+    margin-top: 1.25rem !important;
+    margin-bottom: 1.25rem !important;
+    ;
   }
-  
-  button {
+
+  &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,12 +33,12 @@
       padding-top: .5rem;
       padding-bottom: .5rem;
     }
-    
+
     @media (min-width: $breakpoint-lg ) {
       padding-top: .65rem;
       padding-bottom: .65rem;
     }
-    
+
     @media (min-width: $breakpoint-xl ) {
       padding-top: .75rem;
       padding-bottom: .75rem;
@@ -46,12 +48,12 @@
       width: 25px;
       height: 24px;
       cursor: pointer;
-    
+
       @media (min-width: $breakpoint-lg ) {
         width: 27px;
         height: 26px;
       }
-    
+
       @media (min-width: $breakpoint-xl ) {
         width: 30px;
         height: 29px;
@@ -59,20 +61,20 @@
     }
   }
 
-  &__collapse {
+  &__panel {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    
+
     @media (min-width: $breakpoint-md ) {
-      padding-top: 1.5rem!important;
-      padding-bottom: 1.5rem!important;
+      padding-top: 1.5rem !important;
+      padding-bottom: 1.5rem !important;
     }
-    
+
     @media (min-width: $breakpoint-xl ) {
-      padding-top: 1.75rem!important;
-      padding-bottom: 1.75rem!important;
+      padding-top: 1.75rem !important;
+      padding-bottom: 1.75rem !important;
     }
 
     ul {

@@ -5,79 +5,70 @@ import Collapse from '../../components/Collapse';
 import Slideshow from '../../components/SlideShow';
 
 function Property() {
-
   // Get the propertyId param from the URL.
-  let {propertyId} = useParams();
+  let { propertyId } = useParams();
 
-  let property = propertiesData
-    .find((data) => data.id == propertyId);
+  let property = propertiesData.find((data) => data.id == propertyId);
 
-  let tags = property.tags
-    .map((tag, index) => <li key={`tag-${index}`}>{tag}</li>)
+  if (property === undefined) {
+    throw new ReferenceError(`No property ID equals ${propertyId}`);
+  }
+
+  let tags = property.tags.map((tag, index) => (
+    <li key={`tag-${index}`}>{tag}</li>
+  ));
 
   let host = property.host;
 
   let accordions = [
     {
       title: 'Description',
-      description: property.description
+      description: property.description,
     },
     {
       title: 'Equipements',
-      description: property.equipments
-    }
+      description: property.equipments,
+    },
   ];
-  
+
   return (
     <>
-      <div className='property'>
-        <div className='property__header'>
-          <div className='part-left'>
-            <h1>
-              {property.title}
-            </h1>
-            <h2>
-              {property.location}
-            </h2>
-            <ul>
-              {tags}
-            </ul>
+      <div className="property">
+        <div className="property__header">
+          <div className="part-left">
+            <h1>{property.title}</h1>
+            <h2>{property.location}</h2>
+            <ul>{tags}</ul>
           </div>
-          <div className='part-right'>
-            <div className='part-right__host'>
-              <span>
-                {host.name}
-              </span>
+          <div className="part-right">
+            <div className="part-right__host">
+              <span>{host.name}</span>
               <img aria-hidden="true" src={host.picture} alt={host.name} />
             </div>
-            <div className='part-right__rating'>
+            <div className="part-right__rating">
               <div>
-                <span className='fa-solid fa-star' aria-hidden='true'></span>
-                <span className='fa-solid fa-star' aria-hidden='true'></span>
-                <span className='fa-solid fa-star' aria-hidden='true'></span>
-                <span className='fa-solid fa-star' aria-hidden='true'></span>
-                <span className='fa-solid fa-star' aria-hidden='true'></span>
+                <span className="fa-solid fa-star" aria-hidden="true"></span>
+                <span className="fa-solid fa-star" aria-hidden="true"></span>
+                <span className="fa-solid fa-star" aria-hidden="true"></span>
+                <span className="fa-solid fa-star" aria-hidden="true"></span>
+                <span className="fa-solid fa-star" aria-hidden="true"></span>
               </div>
-              <StarRating
-                rating = {property.rating} />
+              <StarRating rating={property.rating} />
             </div>
           </div>
         </div>
-        <div className='property__main'>
-          {
-            accordions.map((item, index) =>                       
-              <Collapse 
-                key = {`id-${index}`}
-                title = {item.title}
-                number = {index}
-                dataArray = {[item.description].flat()}
-              />)
-          }
+        <div className="property__main">
+          {accordions.map((item, index) => (
+            <Collapse
+              key={`id-${index}`}
+              title={item.title}
+              number={index}
+              dataArray={[item.description].flat()}
+            />
+          ))}
         </div>
-        <div className='property__carousel'>
-          <Slideshow 
-            images = {property.pictures}
-            title = {property.title} />
+        <div className="property__carousel">
+          <Slideshow images={property.pictures} title={property.title} />
         </div>
       </div>
     </>

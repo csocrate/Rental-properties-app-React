@@ -4,23 +4,19 @@ import Card from '../../components/Card';
 import homeBanner from '../../assets/images/home_banner.jpg';
 
 function Home() {
-
   return (
     <>
-      <Banner 
-        title = 'Chez vous, partout et ailleurs'
-        image = {homeBanner} />
+      <Banner title="Chez vous, partout et ailleurs" image={homeBanner} />
       <div className="cards">
         <div>
-          { 
-            propertiesData.map((property, index) => 
-              <Card
-                key = {index}
-                title = {property.title}
-                url = {`/propriete/${property.id}`}
-                cover = {property.cover}
-              />)
-          }
+          {propertiesData.map((property, index) => (
+            <Card
+              key={index}
+              title={property.title}
+              url={`/propriete/${property.id}`}
+              cover={property.cover}
+            />
+          ))}
         </div>
       </div>
     </>

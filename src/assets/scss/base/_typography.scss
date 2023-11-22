@@ -37,9 +37,9 @@
   }
 }
 
-.not-found{
-  > * {
-    color:  $not-found-error-color
+.not-found {
+  >* {
+    color: $not-found-error-color
   }
 
   h1 {
@@ -155,11 +155,11 @@
     @media (min-width: $breakpoint-lg ) {
       font-size: $font-size-li-accordion-lg;
     }
-    
+
     @media (min-width: $breakpoint-xl ) {
       font-size: $font-size-li-accordion-xl;
     }
-    
+
     @media (min-width: $breakpoint-xxl ) {
       font-size: $font-size-li-accordion-xxl;
     }
@@ -246,7 +246,7 @@
         text-transform: capitalize;
         text-align: right;
         color: $color-host-name-property;
-  
+
         @media (min-width: $breakpoint-md ) {
           font-size: $font-size-host-name-property-md;
         }
@@ -254,31 +254,33 @@
     }
 
     &__rating {
-      div {  
+      div {
         span {
           @media (min-width: $breakpoint-md ) {
             font-size: $font-size-star-property-md;
           }
+
           @media (min-width: $breakpoint-lg ) {
             font-size: $font-size-star-property-lg;
           }
+
           @media (min-width: $breakpoint-xl ) {
             font-size: $font-size-star-property-xl;
           }
         }
-  
+
         &:first-child {
           span {
             color: $color-star-default;
           }
         }
-  
+
         &:last-child {
           span {
             color: $color-star-rating;
           }
         }
-      }      
+      }
     }
   }
 }

@@ -3,7 +3,7 @@
   background-color: $bg-color-footer;
 
 
-  > div {
+  >div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +11,7 @@
     width: 90%;
     margin: 0 auto;
     min-height: 12rem;
-    
+
     @media (min-width: $breakpoint-lg ) {
       max-width: 1240px;
     }
@@ -20,7 +20,7 @@
       width: 8rem;
       text-align: center;
       padding-top: .875rem;
-    
+
       @media (min-width: $breakpoint-lg ) {
         width: unset;
       }

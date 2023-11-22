@@ -2,14 +2,14 @@
   width: 100%;
   background-color: white;
 
-  > div {
+  >div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
     margin: 0 auto;
     padding: 2.5rem 0;
-    
+
     @media (min-width: $breakpoint-lg ) {
       max-width: 1240px;
     }
@@ -18,15 +18,15 @@
       display: inline-block;
 
       img {
-    
+
         @media (min-width: $breakpoint-md ) {
           width: 125px;
         }
-    
+
         @media (min-width: $breakpoint-lg ) {
           width: 150px;
         }
-    
+
         @media (min-width: $breakpoint-xl ) {
           width: 160px;
         }
@@ -41,19 +41,19 @@
         li {
           padding-left: 1rem;
           list-style: none;
-    
+
           @media (min-width: $breakpoint-411 ) {
             padding-left: 1.5rem;
           }
-    
+
           @media (min-width: $breakpoint-md ) {
             padding-left: 2rem;
           }
-    
+
           @media (min-width: $breakpoint-lg ) {
             padding-left: 2.5rem;
           }
-    
+
           @media (min-width: $breakpoint-xl ) {
             padding-left: 3rem;
           }

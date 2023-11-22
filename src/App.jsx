@@ -3,10 +3,7 @@ import Property from './pages/Property';
 import About from './pages/About';
 import NotFound from './pages/404';
 import Root from './routes';
-import {
-  createBrowserRouter,
-  RouterProvider
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
@@ -16,24 +13,24 @@ const router = createBrowserRouter([
     children: [
       {
         path: '',
-        element: <Home />
+        element: <Home />,
       },
       {
         path: 'propriete/:propertyId',
-        element: <Property />
+        element: <Property />,
       },
       {
         path: 'a-propos',
-        element: <About />
-      }  
-    ]
-  }
+        element: <About />,
+      },
+    ],
+  },
 ]);
 
 function App() {
   return (
     <>
-      <RouterProvider router = {router} />
+      <RouterProvider router={router} />
     </>
   );
 }

@@ -1,28 +1,28 @@
 .about {
-  > div {
+  >div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: .875rem;
     padding-bottom: .875rem;
-    
+
     @media (min-width: $breakpoint-md ) {
       max-width: 80%;
       margin: 0 auto;
       padding-top: 1.25rem;
       padding-bottom: 1.25rem;
-    }  
-    
+    }
+
     @media (min-width: $breakpoint-lg ) {
       max-width: 82%;
       padding-top: 2rem;
       padding-bottom: 2rem;
-    }    
-    
+    }
+
     @media (min-width: $breakpoint-xxl ) {
       padding-top: 3rem;
       padding-bottom: 3rem;
-    }  
+    }
   }
 }

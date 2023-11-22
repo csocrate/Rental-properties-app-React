@@ -10,29 +10,29 @@
       justify-content: space-between;
     }
 
-    .part-left {      
+    .part-left {
       h1 {
         margin-bottom: .75rem;
-    
+
         @media (min-width: $breakpoint-md ) {
           max-width: 400px;
           margin-bottom: .35rem;
         }
-    
+
         @media (min-width: $breakpoint-lg ) {
           max-width: unset;
           margin-bottom: .05rem;
         }
       }
-      
+
       h2 {
         margin-bottom: .5rem;
-    
+
         @media (min-width: $breakpoint-md ) {
           margin-bottom: 1.35rem;
         }
       }
-    
+
       ul {
         display: flex;
         flex-wrap: wrap;
@@ -41,11 +41,11 @@
         margin-top: .875rem;
         margin-bottom: 1.35rem;
         padding-left: 0;
-    
+
         @media (min-width: $breakpoint-lg ) {
           max-width: unset;
         }
-    
+
         li {
           display: inline-block;
           padding-left: 1.85rem;
@@ -54,7 +54,7 @@
           background-color: $primary-color;
         }
       }
-    }    
+    }
 
     .part-right {
       display: flex;
@@ -70,7 +70,7 @@
         justify-content: space-between;
         max-height: 7.875rem;
       }
-      
+
       &__host {
         display: flex;
         justify-content: space-between;
@@ -86,7 +86,7 @@
           display: inline-block;
           width: 50%;
         }
-      
+
         img {
           display: block;
           width: 50px;
@@ -102,7 +102,7 @@
 
       &__rating {
         position: relative;
-    
+
         @media (min-width: $breakpoint-md ) {
           order: 2;
         }
@@ -132,7 +132,7 @@
     flex-direction: column;
     margin-top: .65rem;
     margin-bottom: 1.25rem;
-  
+
     @media (min-width: $breakpoint-md ) {
       flex-direction: row;
       justify-content: space-between;
@@ -141,12 +141,12 @@
       margin-top: -.75rem;
       margin-bottom: 1.75rem;
     }
-    
+
     @media (min-width: $breakpoint-lg ) {
       gap: 3rem;
       margin-top: -1rem;
     }
-    
+
     @media (min-width: $breakpoint-xl ) {
       gap: 4rem;
       margin-bottom: 2rem;
@@ -157,7 +157,7 @@
         display: flex;
         flex-direction: column;
         gap: .25rem;
-    
+
         @media (min-width: $breakpoint-lg ) {
           gap: .45rem;
         }
