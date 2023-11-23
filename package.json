@@ -1,7 +1,8 @@
 {
   "name": "rental-properties-app-react",
   "private": true,
-  "version": "0.0.0",
+  "description": "Rental properties app - First version",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,6 +10,14 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview --port 8080"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csocrate/rental-properties-app-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/csocrate/rental-properties-app-react",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
