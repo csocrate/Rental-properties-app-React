@@ -11,7 +11,7 @@ function Footer() {
               src={logo_light}
               alt="Kasa"
               width="100"
-              height="auto"
+              height="33"
               loading="lazy"
             />
           </Link>

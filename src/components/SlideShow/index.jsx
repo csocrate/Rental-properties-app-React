@@ -33,7 +33,7 @@ function Slideshow({ images, title }) {
           <button
             className="previous-btn"
             onClick={handlePreviousSlide}
-            type="Btn"
+            type="button"
           >
             <svg
               width="20"
@@ -48,7 +48,7 @@ function Slideshow({ images, title }) {
               />
             </svg>
           </button>
-          <button className="next-btn" onClick={handleNextSlide} type="Btn">
+          <button className="next-btn" onClick={handleNextSlide} type="button">
             <svg
               width="20"
               height="20"

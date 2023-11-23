@@ -1,6 +1,6 @@
 .header-site {
   width: 100%;
-  background-color: white;
+  background-color: $bg-color-header;
 
   >div {
     display: flex;
@@ -21,6 +21,7 @@
 
         @media (min-width: $breakpoint-md ) {
           width: 125px;
+          height: auto;
         }
 
         @media (min-width: $breakpoint-lg ) {

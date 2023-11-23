@@ -7,7 +7,7 @@ function Header() {
       <header className="header-site">
         <div>
           <Link to="/">
-            <img src={logo} alt="Kasa" width="100" height="auto" />
+            <img src={logo} alt="Kasa" width="100" height="32" />
           </Link>
           <nav>
             <ul>

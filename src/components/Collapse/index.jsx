@@ -4,15 +4,19 @@ import { useState } from 'react';
 function Collapse({ title, number, dataArray }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const handleCollapsible = () => {
+  const hidePanel = () => {
     setIsExpanded(false);
+  };
+
+  const showPanel = () => {
+    setIsExpanded(true);
   };
 
   return isExpanded ? (
     <article className="accordion" style={{ backgroundColor: '#F6F6F6' }}>
       <h3>
         <button
-          onClick={handleCollapsible}
+          onClick={hidePanel}
           id={`accordion-header-${number}`}
           className="accordion__header"
           type="button"
@@ -52,7 +56,7 @@ function Collapse({ title, number, dataArray }) {
     <article className="accordion">
       <h3>
         <button
-          onClick={() => setIsExpanded(true)}
+          onClick={showPanel}
           id={`accordion-header-${number}`}
           className="accordion__header"
           type="button"
@@ -65,7 +69,7 @@ function Collapse({ title, number, dataArray }) {
             width="23"
             height="22"
             viewBox="0 0 33 32"
-            transform="rotate(180)"
+            style={{ rotate: '180deg' }}
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
