@@ -1,8 +1,24 @@
-# React + Vite
+# Kasa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kasa is a web platform for renting apartments between individuals.
 
-Currently, two official plugins are available:
+## Tools
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + Vite
+- React router
+- Styling: Sass
+- Responsive
+
+## Constraint
+
+No external React library
+
+## Improvment
+
+- Sass animation on a second version
+
+## Preview
+
+- Clone the repository
+- Install with: npm install
+- Preview with: npm run preview
